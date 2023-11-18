@@ -1,0 +1,50 @@
+.metrics-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
+.metrics-page .avatar {
+  background-color: #C2185B;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+  
+  .metrics-page h1 {
+    margin: 0.5em 0;
+  }
+  
+  .metrics-page p {
+    margin: 0.2em 0;
+  }
+  
+  .past-exams-title {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .chart-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Additional styling for the chart */
+  .chart-container canvas {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  

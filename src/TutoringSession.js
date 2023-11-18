@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ProfilePicture from './components/ProfilePicture';
 
 const TutoringSession = () => {
   const [userInput, setUserInput] = useState('');
@@ -71,6 +72,7 @@ const TutoringSession = () => {
         placeholder="Type your question or feedback..."
       />
       <button onClick={handleUserInputSubmit}>Send</button>
+      <ProfilePicture />
     </div>
   );
 };

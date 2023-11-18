@@ -1,0 +1,30 @@
+/* Basic reset for margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.profile-picture-container {
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right now */
+  padding: 10px; /* Optional: add some padding around the button */
+}
+
+/* Button styling */
+.round-button {
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  border-radius: 50%; /* Circular shape */
+  background-color: #C2185B; /* Darker pink background */
+  color: white; /* Text color */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor changes to a hand icon when hovered */
+  font-family: Arial, sans-serif; /* Font family */
+}
