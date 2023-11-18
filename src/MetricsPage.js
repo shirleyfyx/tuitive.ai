@@ -102,7 +102,7 @@ const MetricsPage = () => {
       },
       title: {
         display: true,
-        text: 'Chemistry Topics Scores',
+        text: 'Chemistry Scores',
       },
     },
   };
@@ -120,8 +120,8 @@ const MetricsPage = () => {
         <Bar data={barData} options={options} />
       </div>
       <div className="study-prompt">
-        <p>Want to study about {lowestGradeTopic}?</p>
-        <button className="go-practice-btn" onClick={handleGoPractice}>Go Practice</button>
+        <p><b>Want to study more about {lowestGradeTopic}?</b></p>
+        <button className="go-practice-btn" onClick={handleGoPractice}>Go Practice!</button>
       </div>
       <p className="overall-trend-title">Overall Chemistry Grade Trend:</p>
       <div className="chart-container">
