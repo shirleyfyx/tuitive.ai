@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './TutoringSession.css';
 import axios from 'axios';
+import ProfilePicture from './components/ProfilePicture';
 
 const TutoringSession = () => {
   const [chatHistory, setChatHistory] = useState([]);
@@ -82,6 +83,7 @@ const TutoringSession = () => {
               placeholder="Ask a specific question..."
             />
             <button onClick={handleUserQuerySubmit}>Submit Question</button>
+      <ProfilePicture />
           </div>
         </div>
       )}

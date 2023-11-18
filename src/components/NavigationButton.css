@@ -1,0 +1,14 @@
+/* Styling for the navigation button */
+.navigation-button {
+  position: fixed; /* Fixed position */
+  top: 10px; /* Align to the top with a gap */
+  right: 10px; /* Align to the right with a gap */
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 10px; /* Margin around the button */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Slight rounding of corners */
+  cursor: pointer; /* Cursor changes to a hand icon when hovered */
+  font-size: 1em; /* Font size */
+}
