@@ -1,7 +1,7 @@
 # Tuitive.ai
 
-![image](https://github.com/shirleyfyx/tuitive.ai/assets/109609935/460f691b-b93f-4641-a4a7-aa81903fe333)
+![image](https://github.com/shirleyfyx/tuitive.ai/assets/109609935/df39ff1d-6498-4dbf-82f2-8c1b9e09f3ef)
 
-![image](https://github.com/shirleyfyx/tuitive.ai/assets/109609935/7aff7d81-78ca-4723-85ca-13d29a591ee9)
+![image](https://github.com/shirleyfyx/tuitive.ai/assets/109609935/349c308f-2176-4272-a3c6-f31509fd835d)
 
-![image](https://github.com/shirleyfyx/tuitive.ai/assets/109609935/fd14ddd7-b213-4e51-a06b-a49fe7420b65)
+![image](https://github.com/shirleyfyx/tuitive.ai/assets/109609935/b471d153-023b-4247-9050-8040297702db)
