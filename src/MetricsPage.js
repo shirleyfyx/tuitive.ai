@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Bar, Line } from 'react-chartjs-2';
 import 'chart.js/auto';
-import './MetricsPage.css';
-import NavigationButton from './components/NavigationButton';
+import './MetricsPage.css'; // Ensure this CSS file is in the same directory
+import NavigationButton from './components/NavigationButton'; // Adjust this path if necessary
+import { useNavigate } from 'react-router-dom';
 
 const MetricsPage = () => {
   // Function to handle chemistry topics scoring
@@ -20,14 +21,27 @@ const MetricsPage = () => {
     };
   };
 
-  
   // State for the chemistry scores
   const [chemistryScores, setChemistryScores] = useState({});
+  const [lowestGradeTopic, setLowestGradeTopic] = useState('');
 
-  // Update scores when the component mounts
+  const navigate = useNavigate(); // Hook for navigation
+
+  // Update scores and determine the lowest grade topic when the component mounts
   useEffect(() => {
-    setChemistryScores(handleChemistryChatScores());
+    const scores = handleChemistryChatScores();
+    setChemistryScores(scores);
+    // Find the lowest grade topic
+    const lowestTopic = Object.keys(scores).reduce((lowest, topic) => {
+      return scores[lowest] < scores[topic] ? lowest : topic;
+    }, Object.keys(scores)[0]);
+    setLowestGradeTopic(lowestTopic);
   }, []);
+
+  // Function to handle "Go Practice" button click
+  const handleGoPractice = () => {
+    navigate('/'); // Navigate to the main page
+  };
 
   // Data for the Bar chart
   const barData = {
@@ -100,10 +114,14 @@ const MetricsPage = () => {
       <h1>Shirley Fang</h1>
       <p>Curriculum: IB</p>
       <p>Grade: 11</p>
+      <p>Subject: Chemistry</p>
       <p>University Goal: University of Waterloo Computer Science</p>
-      <p className="past-exams-title">Chemistry Topics:</p>
       <div className="chart-container">
         <Bar data={barData} options={options} />
+      </div>
+      <div className="study-prompt">
+        <p>Want to study about {lowestGradeTopic}?</p>
+        <button className="go-practice-btn" onClick={handleGoPractice}>Go Practice</button>
       </div>
       <p className="overall-trend-title">Overall Chemistry Grade Trend:</p>
       <div className="chart-container">
