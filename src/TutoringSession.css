@@ -1,0 +1,99 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #e5e5ea; /* Light background */
+  margin: 0;
+  padding: 20px;
+  color: #000; /* Black text for better readability */
+}
+
+h2 {
+  color: #000; /* Black title text */
+  font-size: 28px; /* Larger title size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chat-window {
+  background-color: #fff;
+  border-radius: 20px; /* Rounded corners for chat window */
+  padding: 20px;
+  margin: 20px auto; /* Centering the chat window */
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.ai-message {
+  background-color: #f0f0f0; /* Light grey for AI messages */
+  color: #000; /* Black text */
+  border-radius: 18px; /* Rounded corners for message bubbles */
+  padding: 10px 15px;
+  margin: 4px 0;
+  display: block;
+  max-width: 75%;
+}
+
+.user-message {
+  background-color: #007aff; /* Blue for user messages */
+  color: #fff; /* White text for contrast */
+  text-align: left;
+  border-radius: 18px; /* Rounded corners for message bubbles */
+  padding: 10px 15px;
+  margin: 4px 0;
+  display: block;
+  max-width: 75%;
+  align-self: flex-end;
+}
+
+.response-buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.response-buttons button {
+  background-color: #007aff; /* Blue for buttons */
+  color: #fff; /* White text for buttons */
+  border: none;
+  border-radius: 18px; /* Rounded corners for buttons */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.response-buttons button:hover {
+  background-color: #0051a8; /* Slightly darker blue on hover */
+}
+
+.user-query-section {
+  display: flex;
+  justify-content: center; /* Center input and button */
+  gap: 10px; /* Space between input and button */
+  margin-bottom: 20px;
+}
+
+.user-query-section input {
+  padding: 10px;
+  border: 2px solid #007aff; /* Blue border for input */
+  border-radius: 18px; /* Rounded corners for input */
+  flex-grow: 1; /* Allow input to fill space */
+  outline: none;
+}
+
+.user-query-section button {
+  background-color: #007aff; /* Blue for button */
+  color: #fff; /* White text for button */
+  border: none;
+  border-radius: 18px; /* Rounded corners for button */
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.user-query-section button:hover {
+  background-color: #0051a8; /* Slightly darker blue on hover */
+}

@@ -4,6 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+# Ignore node modules in server subfolder
+backend/node_modules/
+# Ignore environment files in server
+backend/.env
+
+
 
 # testing
 /coverage
